@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biglietto d'Auguri per Don Ciccio</title>
+  <!-- Font eleganti in stile classico/tradizionale -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Great+Vibes&family=Marcellus&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #c6922e;
+      --dark-gold: #85581a;
+      --bg-cream: #fdfbf7;
+      --text-dark: #2c221e;
+      --terracotta: #943422;
+      --border-outer: #54391e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle, #3d2b1f 0%, #150e09 100%);
+      padding: 30px 15px;
+      font-family: 'Marcellus', serif;
+    }
+
+    .card-container {
+      background-color: var(--bg-cream);
+      background-image: radial-gradient(#e2d7c3 1px, transparent 1px);
+      background-size: 22px 22px;
+      max-width: 620px;
+      width: 100%;
+      padding: 35px 25px;
+      border-radius: 12px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75), inset 0 0 100px rgba(181, 148, 92, 0.25);
+      position: relative;
+      text-align: center;
+      border: 3px solid var(--border-outer);
+    }
+
+    /* Cornice interna decorativa */
+    .card-inner-border {
+      border: 2px solid var(--gold);
+      padding: 25px 20px;
+      position: relative;
+    }
+
+    .card-inner-border::before,
+    .card-inner-border::after {
+      content: "✦";
+      position: absolute;
+      color: var(--dark-gold);
+      font-size: 18px;
+    }
+    .card-inner-border::before { top: 8px; left: 10px; }
+    .card-inner-border::after { bottom: 8px; right: 10px; }
+
+    /* Immagine cartoon */
+    .photo-frame {
+      margin: 0 auto 20px auto;
+      max-width: 380px;
+      border: 3px solid var(--dark-gold);
+      border-radius: 8px;
+      padding: 6px;
+      background-color: #fff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .ornament {
+      color: var(--gold);
+      font-size: 20px;
+      letter-spacing: 8px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-family: 'Cinzel', serif;
+      font-size: 0.95rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .recipient {
+      font-family: 'Cinzel', serif;
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--text-dark);
+      letter-spacing: 2px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    .divider {
+      width: 140px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--dark-gold), transparent);
+      margin: 0 auto 20px auto;
+    }
+
+    .message {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: #43332a;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+
+    .signature-wrap {
+      margin-top: 15px;
+    }
+
+    .family {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: var(--terracotta);
+      display: block;
+      margin-bottom: 8px;
+      line-height: 1;
+    }
+
+    .names-list {
+      font-size: 1.05rem;
+      color: #3b2d24;
+      line-height: 1.6;
+      max-width: 480px;
+      margin: 0 auto;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .names-list span {
+      color: var(--dark-gold);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card-inner-border">
+      
+      <!-- Cornice con Immagine Cartoon -->
+      <div class="photo-frame">
+        <img src="don_ciccio_cartoon.jpg" alt="Don Ciccio Cartoon">
+      </div>
+
+      <div class="ornament">❖ ❖ ❖</div>
+      
+      <p class="subtitle">Cento di questi giorni a</p>
+      <h1 class="recipient">DON CICCIO</h1>
+      
+      <div class="divider"></div>
+
+      <p class="message">
+        Cu salute, paci e rispettu.<br>
+        Pi cent'anni sempri a testa auta!
+      </p>
+
+      <div class="signature-wrap">
+        <span class="family">’A Famigghia</span>
+        <p class="names-list">
+          Don Maurizio <span>•</span> Don Lollo <span>•</span> Marco <span>•</span> Fabrizio<br>
+          Rebs <span>•</span> Martina <span>•</span> Federico <span>•</span> Carlo <span>•</span> Leonardo
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
